@@ -1,0 +1,40 @@
+
+.wallet-content-area {
+    background: #fbf9f6;
+    box-shadow: 1.5px 1.5px 8px rgba(0, 0, 0, 0.1);
+    width: 412px;
+    max-width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    position: relative;
+    z-index: 1;
+   .close-btn {
+        border: 0;
+        background: transparent;
+        position: absolute;
+        right: 31px;
+        top: 31px;
+        z-index: 1;
+    }
+}
+.modals-header {
+    .modals-title {
+        font-size: 12px;
+    }
+     p {
+         font-family: $gt_america;
+     }
+} 
+
+
+.wallet-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    p {
+        font-family: $gt_america;
+        margin-left: 10px;
+    }
+}

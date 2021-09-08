@@ -1,0 +1,41 @@
+.item-wrapper {
+    position: relative;
+    z-index: 1;
+    img {
+        border: 1px solid #333333;
+        @include mq(xs) {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+    .brand-tag {
+        color: $white-color;
+        font-size: 14px;
+        line-height: 1;
+        position: absolute;
+        writing-mode: vertical-lr;
+        display: inline-block;
+        left: 29px;
+        bottom: 18px;
+        z-index: 1;
+        @include mq(xs) {
+            left: 30px;
+            bottom: 60px;
+        }
+    }
+    .brand-tag-1 {
+        left: 30%;
+        @include mq(lg) {
+            left: 30px;
+        }
+        @include mq(md) {
+            left: 30px;
+        }
+        @include mq(xs) {
+            left: 30px;
+        }
+    }
+}
+
+
+

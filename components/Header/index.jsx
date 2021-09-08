@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const Header = () => {
    return (
-      <header className="main-header"> {/*<!--header start--> */}
+      <header className="main-header">
          <div className="container">
             <div className="d-flex align-items-center pt-20 pb-20">
                <Link href="/"><a className="header-logo logo-text">Fancy</a></Link>

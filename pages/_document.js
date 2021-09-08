@@ -12,7 +12,6 @@ class MyDocument extends Document {
       <Html>
         <Head>
           {/* basic needs */}
-          <link rel="stylesheet" href="/assets/css/main.css" />
 
           <Script async src="/assets/js/jquery-3.6.0.min.js"></Script>
           <Script src="/assets/js/swiper.min.js"></Script>

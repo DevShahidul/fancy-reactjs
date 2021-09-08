@@ -1,10 +1,11 @@
 import React from 'react'
 
-export const WalletModal = () => {
+export const WalletModal = (props) => {
+   const onDismiss = props.onDismiss;
    return (
       <div className="wallet-content-area">
          <div className="modals-content text-center">
-            <button type="button" className="close-btn"><img src="assets/img/icon/cross.svg" alt="Close Icon" /></button>
+            <button onClick={onDismiss} type="button" className="close-btn"><img src="assets/img/icon/cross.svg" alt="Close Icon" /></button>
             <div className="modals-header mb-45">
                <h5 className="modals-title mb-15">CONNECT WALLET</h5>
                <p>Please select a wallet to connect</p>

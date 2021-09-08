@@ -1,3 +1,4 @@
+import Script from 'next/script'
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 
 class MyDocument extends Document {
@@ -13,9 +14,9 @@ class MyDocument extends Document {
           {/* basic needs */}
           <link rel="stylesheet" href="/assets/css/main.css" />
 
-          <script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
-          <script type="text/javascript" src="/assets/js/swiper.min.js"></script>
-          <script type="text/javascript" src="/assets/js/main.js"></script>
+          <Script async src="/assets/js/jquery-3.6.0.min.js"></Script>
+          <Script src="/assets/js/swiper.min.js"></Script>
+          <Script src="/assets/js/main.js"></Script>
         </Head>
         <body>
           <Main />

@@ -1,9 +1,13 @@
 import React from 'react'
 
-export const Modal = ({ children }) => {
+export const Modal = ({ children, isOpen }) => {
    return (
-      <div className="modal-wrap">
-         {children}
-      </div>
+      <>
+         {isOpen ?
+            <div className="modal-wrap">
+               {children}
+            </div> : null
+         }
+      </>
    )
 }

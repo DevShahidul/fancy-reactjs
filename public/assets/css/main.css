@@ -13185,7 +13185,8 @@ input {
 }
 
 .widget-about {
-  width: calc(100% - (50px + 20%));
+  width: calc(100% - (50px + 24%));
+  margin-left: 24%;
 }
 
 .fancy-social a {

@@ -21,13 +21,13 @@ export default function Home() {
                   <span className="brand-tag">002 — BRANDS</span>
                 </div>
                 <div className="item-wrapper text-end">
-                  <Image className="img-fluid" src="/assets/img/item-2.jpg" alt="Item Img" width="468" />
+                  <Image className="img-fluid" src="/assets/img/item-2.jpg" alt="Item Img" width="468" height="301" />
                   <span className="brand-tag brand-tag-1">002 — BRANDS</span>
                 </div>
               </div>
               <div className="col-xl-5 col-lg-6 col-md-6">
                 <div className="item-wrapper">
-                  <Image className="img-fluid" src="/assets/img/item-3.jpg" alt="Item Img" layout="fill" />
+                  <Image className="img-fluid" src="/assets/img/item-3.jpg" alt="Item Img" width="441" height="683" />
                   <span className="brand-tag">002 — BRANDS</span>
                 </div>
               </div>

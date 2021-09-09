@@ -55,6 +55,11 @@
     .list-item{
         padding-left: 0;
     }
+    &.widget-list{
+        @include media-breakpoint-up(xl){
+            padding-left: 50px;
+        }
+    }
 }
 
 @-webkit-keyframes floating-y {

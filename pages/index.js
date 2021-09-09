@@ -14,20 +14,20 @@ export default function Home() {
       <main className="main-wrap">
         <div className="fancy-item-area">
           <div className="container">
-            <div className="row gx-0">
-              <div className="col-xl-7 col-lg-6 col-md-6">
+            <div className="row no-gutters gx-0">
+              <div className="col-xl-7 col-lg-6 col-md-6 tween-images">
                 <div className="item-wrapper">
-                  <Image className="img-fluid" src="/assets/img/item-1.jpg" alt="Item Img" width="499" height="382" />
+                  <Image className="img-fluid" src="/assets/img/item-1.jpg" alt="Item Img" width="533" height="408" />
                   <span className="brand-tag">002 — BRANDS</span>
                 </div>
                 <div className="item-wrapper text-end">
-                  <Image className="img-fluid" src="/assets/img/item-2.jpg" alt="Item Img" width="468" height="301" />
+                  <Image className="img-fluid" src="/assets/img/item-2.jpg" alt="Item Img" width="500" height="321" />
                   <span className="brand-tag brand-tag-1">002 — BRANDS</span>
                 </div>
               </div>
-              <div className="col-xl-5 col-lg-6 col-md-6">
+              <div className="col-xl-5 col-lg-6 col-md-6 single-image">
                 <div className="item-wrapper">
-                  <Image className="img-fluid" src="/assets/img/item-3.jpg" alt="Item Img" width="441" height="683" />
+                  <Image className="img-fluid" src="/assets/img/item-3.jpg" alt="Item Img" width="471" height="730" />
                   <span className="brand-tag">002 — BRANDS</span>
                 </div>
               </div>

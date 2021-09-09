@@ -287,6 +287,13 @@ label {
 	background: #222;
 }
 
+
+.container{
+	@media screen and (min-width: 1200px) {
+		max-width: 1190px;
+	}
+}
+
 /*--
     - color
 -----------------------------------------*/

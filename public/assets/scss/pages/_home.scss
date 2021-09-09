@@ -1,7 +1,16 @@
 .item-wrapper {
     position: relative;
     z-index: 1;
+    max-width: 100%;
+    image-rendering: -webkit-optimize-contrast;
+    &>div{
+        display: block !important;
+        border: 1px solid #333333;
+    }
     img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
         border: 1px solid #333333;
         @include mq(xs) {
             width: 100%;
@@ -37,5 +46,29 @@
     }
 }
 
-
-
+.tween-images{
+    .item-wrapper{
+        max-width: 533px;
+        @include media-breakpoint-down(sm){
+            max-width: 100%;
+        }
+        &+.item-wrapper{
+            max-width: 500px;
+            @include media-breakpoint-down(sm){
+                max-width: 100%;
+            }
+            margin-left: auto;
+            &>div{
+                margin-right: -1px;
+            }
+        }
+    }
+}
+.single-image{
+    .item-wrapper{
+        max-width: 472px;
+        @include media-breakpoint-down(sm){
+            max-width: 100%;
+        }
+    }
+}

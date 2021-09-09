@@ -11,8 +11,7 @@
     line-height: 1;
     width: 50px;
     padding-top: 7px;
-    position: absolute;
-    left: -38%;
+    position: relative;
     z-index: 1;
     animation: floating-y infinite 5s alternate-reverse;
 
@@ -36,6 +35,10 @@
     }
 }
 
+.widget-about{
+    width: calc(100% - (50px + 20%));
+}
+
 .fancy-social {
     a {
         display: inline-block;
@@ -46,6 +49,12 @@
         }
     }
 } 
+
+.widget{
+    .list-item{
+        padding-left: 0;
+    }
+}
 
 @-webkit-keyframes floating-y {
     0% {

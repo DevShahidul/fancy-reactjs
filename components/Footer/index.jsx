@@ -6,13 +6,13 @@ export const Footer = () => {
       <footer className="footer-area heding-bg pt-60 pb-30">
          <div className="container">
             <div className="row">
-               <div className="col-lg-5 col-md-8">
+               <div className="col-lg-5 col-md-8 d-flex">
+                  <div className="footer-logo">
+                     <span className="d-block">FA</span>
+                     <span className="d-block">NC</span>
+                     <span className="d-block">Y</span>
+                  </div>
                   <div className="widget widget-about position-relative mb-30">
-                     <div className="footer-logo">
-                        <span className="d-block">FA</span>
-                        <span className="d-block">NC</span>
-                        <span className="d-block">Y</span>
-                     </div>
                      <h6 className="widget-title mb-20">We are Fancy</h6>
                      <p className="widget-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
                   </div>

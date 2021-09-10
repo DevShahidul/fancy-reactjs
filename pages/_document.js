@@ -10,12 +10,7 @@ class MyDocument extends Document {
   render() {
     return (
       <Html>
-        <Head>
-          {/* basic needs */}
-          <Script async src="/assets/js/jquery-3.6.0.min.js"></Script>
-          <Script src="/assets/js/swiper.min.js"></Script>
-          <Script src="/assets/js/main.js"></Script>
-        </Head>
+        <Head />
         <body>
           <Main />
           <NextScript />

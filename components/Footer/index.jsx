@@ -30,12 +30,12 @@ export const Footer = () => {
                      <h6 className="widget-title mb-20">Be in the know</h6>
                      <form action="#" className="form-one mb-15">
                         <input type="text" placeholder="Your email" />
-                        <button className="sub_btn"><img src="assets/img/icon/chevron-right.svg" alt="chevron-right" /></button>
+                        <button className="sub_btn"><img src="/assets/img/icon/chevron-right.svg" alt="chevron-right" /></button>
                      </form>
                      <div className="fancy-social">
-                        <Link href="#"><a><img src="assets/img/icon/facebook.svg" alt="Social Icon" /></a></Link>
-                        <Link href="#"><a><img src="assets/img/icon/twitter.svg" alt="" /></a></Link>
-                        <Link href="#"><a><img src="assets/img/icon/eye-man.svg" alt="" /></a></Link>
+                        <Link href="#"><a><img src="/assets/img/icon/facebook.svg" alt="Social Icon" /></a></Link>
+                        <Link href="#"><a><img src="/assets/img/icon/twitter.svg" alt="" /></a></Link>
+                        <Link href="#"><a><img src="/assets/img/icon/eye-man.svg" alt="" /></a></Link>
                      </div>
                   </div>
                </div>

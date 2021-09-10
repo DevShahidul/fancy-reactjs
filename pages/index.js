@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -16,20 +17,26 @@ export default function Home() {
           <div className="container">
             <div className="row no-gutters gx-0">
               <div className="col-xl-7 col-lg-6 col-md-6 tween-images">
-                <div className="item-wrapper">
-                  <Image className="img-fluid" src="/assets/img/item-1.jpg" alt="Item Img" width="533" height="408" />
-                  <span className="brand-tag">002 — BRANDS</span>
-                </div>
-                <div className="item-wrapper text-end">
-                  <Image className="img-fluid" src="/assets/img/item-2.jpg" alt="Item Img" width="500" height="321" />
-                  <span className="brand-tag brand-tag-1">002 — BRANDS</span>
-                </div>
+                <Link href="/category">
+                  <a className="item-wrapper">
+                    <Image className="img-fluid" src="/assets/img/item-1.jpg" alt="Item Img" width="533" height="408" />
+                    <span className="brand-tag">002 — BRANDS</span>
+                  </a>
+                </Link>
+                <Link href="/category">
+                  <a className="item-wrapper text-end">
+                    <Image className="img-fluid" src="/assets/img/item-2.jpg" alt="Item Img" width="500" height="321" />
+                    <span className="brand-tag brand-tag-1">002 — BRANDS</span>
+                  </a>
+                </Link>
               </div>
               <div className="col-xl-5 col-lg-6 col-md-6 single-image">
-                <div className="item-wrapper">
-                  <Image className="img-fluid" src="/assets/img/item-3.jpg" alt="Item Img" width="471" height="730" />
-                  <span className="brand-tag">002 — BRANDS</span>
-                </div>
+                <Link href="/category">
+                  <a className="item-wrapper">
+                    <Image className="img-fluid" src="/assets/img/item-3.jpg" alt="Item Img" width="471" height="730" />
+                    <span className="brand-tag">002 — BRANDS</span>
+                  </a>
+                </Link>
               </div>
             </div>
           </div>

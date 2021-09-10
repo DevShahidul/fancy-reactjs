@@ -1,15 +1,18 @@
-import React from 'react'
-import Image from 'next/image'
-import Link from 'next/link'
+import React from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { Pagination, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
 const CategoryDetails = () => {
+   const router = useRouter();
+   const { productName } = router.query;
    return (
       <div className="category-details-area">
-         <Link href="/category"><a type="button" className="close-btn"><Image src="/assets/img/icon/cross.svg" alt="Close Icon" width="393" height="392" /></a></Link>
+         <Link href="/products"><a type="button" className="close-btn"><Image src="/assets/img/icon/cross.svg" alt="Close Icon" width="393" height="392" /></a></Link>
          <div className="container">
             <div className="row ">
                <div className="col-xl-6 col-lg-6 col-md-6">

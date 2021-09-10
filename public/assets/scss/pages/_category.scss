@@ -206,6 +206,9 @@
         z-index: 2;
         width: 9px;
         height: 9px;
+        &>div{
+            display: block !important;
+        }
         img{
             display: block;
         }

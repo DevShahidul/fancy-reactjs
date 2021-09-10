@@ -6,11 +6,11 @@ export const Layout = ({ children }) => {
 
     return (
         <>
-            <div className="page-container">
+            <main className="page-container">
                 <Header />
                 {children}
-            </div>
-            <Footer />
+                <Footer />
+            </main>
         </>
     )
 }

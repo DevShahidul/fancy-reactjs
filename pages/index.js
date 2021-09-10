@@ -12,18 +12,18 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="main-wrap">
+      <main className="main-wrap home-page">
         <div className="fancy-item-area">
           <div className="container">
             <div className="row no-gutters gx-0">
               <div className="col-xl-7 col-lg-6 col-md-6 tween-images">
-                <Link href="/category">
+                <Link href="/products">
                   <a className="item-wrapper">
                     <Image className="img-fluid" src="/assets/img/item-1.jpg" alt="Item Img" width="533" height="408" />
                     <span className="brand-tag">002 — BRANDS</span>
                   </a>
                 </Link>
-                <Link href="/category">
+                <Link href="/products">
                   <a className="item-wrapper text-end">
                     <Image className="img-fluid" src="/assets/img/item-2.jpg" alt="Item Img" width="500" height="321" />
                     <span className="brand-tag brand-tag-1">002 — BRANDS</span>
@@ -31,7 +31,7 @@ export default function Home() {
                 </Link>
               </div>
               <div className="col-xl-5 col-lg-6 col-md-6 single-image">
-                <Link href="/category">
+                <Link href="/products">
                   <a className="item-wrapper">
                     <Image className="img-fluid" src="/assets/img/item-3.jpg" alt="Item Img" width="471" height="730" />
                     <span className="brand-tag">002 — BRANDS</span>

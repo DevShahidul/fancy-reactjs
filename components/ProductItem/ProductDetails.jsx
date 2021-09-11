@@ -6,13 +6,16 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-export const ProductDetails = ({ title, productImages, price, stock, productDescription }) => {
-   // const handleOnclick = (isTrue) => {
-   //    console.log(isTrue);
-   // }
+export const ProductDetails = ({ title, productImages, price, stock, productDescription, closeModal }) => {
+   const [quantity, setQuantity] = useState(null);
+   const handleOnChange = (e) => {
+      let selectedQuantity = 0;
+      selectedQuantity = e.target.value;
+      setQuantity(selectedQuantity);
+   }
    return (
       <div className="category-details-area">
-         <button type="button" className="close-btn"><Image src="/assets/img/icon/cross.svg" alt="Close Icon" width="393" height="392" /></button>
+         <button onClick={() => closeModal(prev => !prev)} type="button" className="close-btn"><Image src="/assets/img/icon/cross.svg" alt="Close Icon" width="393" height="392" /></button>
          <div className="container">
             <div className="row ">
                <div className="col-xl-6 col-lg-6 col-md-6">
@@ -45,7 +48,7 @@ export const ProductDetails = ({ title, productImages, price, stock, productDesc
                      <div className="select-item mb-25">
                         <div className="select-wrap d-flex align-items-center">
                            <span>Qty:</span>
-                           <select className="select" name="sortBy" id="sortItem">
+                           <select onChange={handleOnChange} className="select" name="sortBy" id="sortItem">
                               <option value="36">36</option>
                               <option value="37">37</option>
                               <option value="38">38</option>

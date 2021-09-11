@@ -22,10 +22,41 @@
         text-decoration: none;
         color: currentColor;
     }
+    &.header-logo{
+        font-family: $gt_america;
+        font-weight: 600;
+        margin-bottom: 0;
+        @media screen and (max-width: 345px) {
+            font-size: 19px;
+        }
+    }
 }
 
 .header-btn-group {
+    display: flex;
+    align-items: center;
     .que_btn {
         margin-left: 14px;
+    }
+    @media screen and (max-width: 767px) {
+        .theme_btn{
+            &.que_btn {
+                margin-left: 8px;
+                padding: 12px 15px;
+            }
+            &:not(.que_btn){
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+    }
+    @media screen and (max-width: 345px) {
+        .theme_btn{
+            padding-top: 8px;
+            padding-bottom: 8px;
+            &.que_btn {
+                padding: 8px 12px;
+            }
+        }
     }
 }

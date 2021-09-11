@@ -21,7 +21,7 @@ export const Header = () => {
                   <Link href="/"><a className="header-logo logo-text">Fancy</a></Link>
                   <div className="header-btn-group ml-auto">
                      <button className="theme_btn" onClick={open}>Connect Wallet</button>
-                     <button className="theme_btn que_btn"><img src="/assets/img/icon/question-mark-1.svg" alt="Question Icon" /></button>
+                     <Link href="/contact"><a className="theme_btn que_btn"><img src="/assets/img/icon/question-mark-1.svg" alt="Question Icon" /></a></Link>
                   </div>
                </div>
             </div>

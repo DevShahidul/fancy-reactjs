@@ -1,10 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
 const ShippingDetails = () => {
+   const [shippingData, setShippingData] = useState({
+      address: '',
+      city: '',
+      state: '',
+      zip: '',
+      country: '',
+      email: ''
+   });
+   const handelOnChange = (e) => {
+      let partialState = {};
+      const value = e.target.value;
+      const name = e.target.name;
+      partialState[name] = value
+      setShippingData(partialState)
+   }
    return (
-      <div className="contact-form">
+      <div className="contact-form shipping-details-wrap">
          <button type="button" className="close-btn"><Image src="/assets/img/icon/cross.svg" alt="Close Icon" width="16px" height="16px" /></button>
          <div className="container">
             <div className="row">
@@ -13,27 +28,27 @@ const ShippingDetails = () => {
                   <form action="#" className="form-two mb-55">
                      <div className="form-group">
                         <label htmlFor="address">Street Address</label>
-                        <input type="text" id="address" name="address" placeholder="1234 Address Street" />
+                        <input onChange={handelOnChange} value={shippingData.address} type="text" id="address" name="address" placeholder="1234 Address Street" />
                      </div>
                      <div className="form-group">
                         <label htmlFor="city">City/Province</label>
-                        <input type="text" id="city" name="city" placeholder="Salt Lake City" />
+                        <input onChange={handelOnChange} value={shippingData.city} type="text" id="city" name="city" placeholder="Salt Lake City" />
                      </div>
                      <div className="form-group">
                         <label htmlFor="state">State</label>
-                        <input type="text" id="state" name="state" placeholder="Utah" />
+                        <input onChange={handelOnChange} value={shippingData.state} type="text" id="state" name="state" placeholder="Utah" />
                      </div>
                      <div className="form-group">
                         <label htmlFor="zip">Zip</label>
-                        <input type="text" id="zip" name="zip" placeholder="84105" />
+                        <input onChange={handelOnChange} value={shippingData.zip} type="text" id="zip" name="zip" placeholder="84105" />
                      </div>
                      <div className="form-group">
                         <label htmlFor="country">Country</label>
-                        <input type="text" id="country" name="country" placeholder="United States" />
+                        <input onChange={handelOnChange} value={shippingData.country} type="text" id="country" name="country" placeholder="United States" />
                      </div>
                      <div className="form-group">
                         <label htmlFor="email">Email</label>
-                        <input type="text" id="email" name="email" placeholder="yourname@email.com" />
+                        <input onChange={handelOnChange} value={shippingData.email} type="text" id="email" name="email" placeholder="yourname@email.com" />
                      </div>
                   </form>
                </div>

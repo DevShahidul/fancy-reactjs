@@ -87,7 +87,7 @@ const Product = () => {
             </div>
          </div>
          <Modal isOpen={isOpen}>
-            <ProductDetails {...selectedItem[0]} />
+            <ProductDetails {...selectedItem[0]} closeModal={setIsOpen} />
          </Modal>
       </>
    )

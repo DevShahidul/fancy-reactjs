@@ -21,7 +21,7 @@ export const Footer = () => {
                   <div className="widget widget-list mb-30">
                      <h6 className="widget-title mb-20">Get in Touch</h6>
                      <ul className="list-item list-style-none">
-                        <li><Link href="#"><a>Contact Us</a></Link></li>
+                        <li><Link href="/contact"><a>Contact Us</a></Link></li>
                      </ul>
                   </div>
                </div>

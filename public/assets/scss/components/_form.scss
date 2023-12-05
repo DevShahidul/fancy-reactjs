@@ -17,10 +17,10 @@ input::placeholder{
         position: relative;
         z-index: 1;
         input {
-            color: $white-color;
+            color: $white-color !important;
             font-family: $ellograph;
             &::placeholder {
-                color: $white-color;
+                color: $white-color !important;
             }
             &::-moz-placeholder {
                 color: $white-color;

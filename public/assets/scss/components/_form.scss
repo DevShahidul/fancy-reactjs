@@ -8,6 +8,9 @@
     font-size: 14px;
     padding-left: 18px;
 }
+input::placeholder{
+    color: #333333 !important;
+}
 
 .widget-form {
     .form-one {
